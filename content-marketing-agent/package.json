@@ -1,0 +1,29 @@
+{
+  "name": "content-marketing-agent",
+  "version": "1.0.0",
+  "description": "AI-powered content marketing assistant with real trend analysis and bilingual support",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "content-marketing",
+    "ai",
+    "social-media",
+    "trends",
+    "dspy",
+    "apify"
+  ],
+  "author": "Content Marketing Agent",
+  "license": "MIT",
+  "dependencies": {
+    "apify": "^3.4.4",
+    "crawlee": "^3.14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "your-github-repo-url"
+  }
+}

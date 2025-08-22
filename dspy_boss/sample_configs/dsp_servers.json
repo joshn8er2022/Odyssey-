@@ -1,0 +1,10 @@
+{
+  "servers": [
+    {
+      "name": "default-dsp",
+      "base_url": "https://dsp.example.com",
+      "api_key": "env:DSP_API_KEY",
+      "model": "gpt-4o-mini"
+    }
+  ]
+}

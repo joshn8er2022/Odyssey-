@@ -1,0 +1,23 @@
+# Core dependencies that work together
+python-dotenv
+streamlit
+openai
+pydantic
+fastapi
+uvicorn
+
+# DSPy for AI orchestration
+dspy-ai
+
+# Alternative translation (no conflicts)
+deep-translator
+langdetect
+
+# Apify client
+apify-client
+
+# Basic utilities
+requests
+beautifulsoup4
+jinja2
+aiofiles

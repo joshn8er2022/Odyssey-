@@ -1,0 +1,98 @@
+{
+  "actorSpecification": 1,
+  "name": "content-marketing-agent",
+  "title": "Content Marketing Agent",
+  "description": "AI-powered content marketing assistant that analyzes real social media trends and generates culturally-adapted, bilingual content for multiple platforms.",
+  "version": "1.0.0",
+  "meta": {
+    "templateId": "node_crawlee"
+  },
+  "input": {
+    "title": "Content Marketing Agent Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+      "user_interests": {
+        "title": "User Interests",
+        "type": "array",
+        "description": "List of user's interests and topics they want to create content about",
+        "items": {
+          "type": "string"
+        },
+        "default": ["business", "personal development"],
+        "prefill": ["business", "personal development"]
+      },
+      "expertise_areas": {
+        "title": "Expertise Areas",
+        "type": "array",
+        "description": "Areas where the user has expertise and wants to share knowledge",
+        "items": {
+          "type": "string"
+        },
+        "default": ["life coaching", "business coaching"],
+        "prefill": ["life coaching", "business coaching"]
+      },
+      "cultural_context": {
+        "title": "Cultural Context",
+        "type": "string",
+        "description": "Cultural background for content adaptation",
+        "enum": ["cameroon", "nigeria", "ghana", "other"],
+        "default": "cameroon"
+      },
+      "content_type": {
+        "title": "Content Type",
+        "type": "string",
+        "description": "Type of content to generate",
+        "enum": ["educational", "motivational", "promotional", "entertainment"],
+        "default": "educational"
+      },
+      "platform": {
+        "title": "Target Platform",
+        "type": "string",
+        "description": "Social media platform to optimize content for",
+        "enum": ["instagram", "tiktok", "linkedin", "facebook", "youtube"],
+        "default": "instagram"
+      },
+      "language": {
+        "title": "Language",
+        "type": "string",
+        "description": "Language for content generation",
+        "enum": ["en", "fr", "bilingual"],
+        "default": "en"
+      }
+    },
+    "required": []
+  },
+  "output": {
+    "title": "Content Marketing Results",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+      "success": {
+        "title": "Success",
+        "type": "boolean",
+        "description": "Whether the content generation was successful"
+      },
+      "timestamp": {
+        "title": "Timestamp",
+        "type": "string",
+        "description": "When the content was generated"
+      },
+      "trends": {
+        "title": "Trend Analysis",
+        "type": "object",
+        "description": "Real-time trend analysis results"
+      },
+      "generated_content": {
+        "title": "Generated Content",
+        "type": "object",
+        "description": "AI-generated content optimized for the target platform"
+      },
+      "summary": {
+        "title": "Summary",
+        "type": "object",
+        "description": "Summary of results and metrics"
+      }
+    }
+  }
+}

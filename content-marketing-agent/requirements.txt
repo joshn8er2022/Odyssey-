@@ -1,0 +1,15 @@
+streamlit
+openai
+pydantic
+fastapi
+uvicorn
+dspy-ai
+deep-translator
+langdetect
+apify-client
+httpx
+requests
+beautifulsoup4
+jinja2
+aiofiles
+python-dotenv

@@ -1,0 +1,14 @@
+{
+  "servers": [
+    {
+      "name": "default-mcp",
+      "base_url": "https://mcp.example.com",
+      "api_key": "env:MCP_API_KEY",
+      "tools": [
+        { "name": "search", "description": "Search knowledge base" },
+        { "name": "execute", "description": "Execute an operation" },
+        { "name": "notify", "description": "Notify stakeholders" }
+      ]
+    }
+  ]
+}

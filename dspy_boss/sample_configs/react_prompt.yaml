@@ -1,0 +1,8 @@
+name: react-agent
+system_prompt: |
+  You are a ReAct-style agent. Think step-by-step.
+user_prompt_template: |
+  Task: {instruction}
+parameters:
+  temperature: 0.2
+  max_tokens: 512

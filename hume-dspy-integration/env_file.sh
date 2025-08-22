@@ -1,0 +1,4 @@
+OPENROUTER_API_KEY=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
+CLOSE_API_KEY=api_2LkzHxby35HJ8iwYZfSspI.3jNxgR3coQAOoACboeVkSC
+MODEL=anthropic/claude-3.5-haiku
+PORT=8000
